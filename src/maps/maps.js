@@ -1,14 +1,24 @@
 import React, {Component} from 'react';
-import {Map, GoogleApiWrapper} from 'google-maps-react';
+import AmCharts from "@amcharts/amcharts3-react";
 
-export class Maps extends Component {
+class Maps extends Component {
 	render(){
 		return (
-			<Map google={this.props.google} zoom={10}></Map>
+			<AmCharts.React
+				style={{
+					width: "100%",
+					height: "700px"
+				}}
+				options={{
+					"type": "map",
+					"theme": "light",
+					"dataProvider": {
+						"map": "worldHigh",
+						"getAreasFromMap": true
+					}
+				}} />
 		);
 	}
 }
 
-export default GoogleApiWrapper({
-	apiKey: 'AIzaSyCpsVf_SsnelR9vEK0gAaUZeNXumdFLWKE'
-})(Maps)
+export default Maps;
