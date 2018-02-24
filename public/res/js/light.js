@@ -94,7 +94,7 @@ AmCharts.themes.light = {
 		unlistedAreasColor: "#000000",
 		outlineColor: "#FFFFFF",
 		outlineAlpha: 0.5,
-		outlineThickness: 0.5,
+		outlineThickness: 1.0,
 		rollOverColor: "#3c5bdc",
 		rollOverOutlineColor: "#FFFFFF",
 		selectedOutlineColor: "#FFFFFF",
